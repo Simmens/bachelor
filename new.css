@@ -1,0 +1,24 @@
+html, body { 
+    overflow-y: hidden;
+    overflow-x: hidden; 
+}
+
+body{
+    background-image: url(bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    align-content: center;
+}
+
+
+
+.container{
+    overflow-y: hidden;
+    overflow-x: hidden; 
+}
+
