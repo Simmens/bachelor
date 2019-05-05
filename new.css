@@ -26,8 +26,9 @@ img{
     margin-top: 100dp;
 }
 
-.card{
-    overflow: scroll;
+
+.card-body{
+    padding: 0;
 }
 
 .all-container {
