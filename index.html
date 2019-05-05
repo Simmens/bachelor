@@ -3,70 +3,123 @@
 
 <head>
     <meta charset="utf8">
-    <link rel="stylesheet" href="new.css">
-    <link rel="stylesheet" href="flipclock.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="flipclock.min.js"></script>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Countdown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
 </head>
+<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<script defer src="jquery.countdown.js"></script>
+<script defer src="script.js"></script>
+<link rel="stylesheet" href="new.css">
 
 <body>
-    <div class="container">
-        <div class="clock-class"></div>
-    </div>
+<div class="all-container">
+        <div id="bachelor-thema">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 m-auto">
+                            <div class="card">
+                                <div class="card-header">
+                                    <b>Zeit bis zur Themenabgabe (31.05.2019 12:00)</b>
+                                    <img src="hourglass.png" id="logo-thema" width=20px>
+
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <tr>
+                                            <td>Tage</td>
+                                            <td>Stunden</td>
+                                            <td>Minuten</td>
+                                            <td>Sekunden</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tage" class="card-display"></td>
+                                            <td id="stunden" class="card-display"></td>
+                                            <td id="minuten" class="card-display"></td>
+                                            <td id="sekunden" class="card-display"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bachelor-start">
+        
+                    <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 m-auto">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <b>Zeit bis zum Bearbeitungsanfang (24.06.2019 09:00)</b>
+                                            <img src="hourglass.png" id="logo-start" width=20px>
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table table-striped">
+                                                <tr>
+                                                    <td>Tage</td>
+                                                    <td>Stunden</td>
+                                                    <td>Minuten</td>
+                                                    <td>Sekunden</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="tage01" class="card-display"></td>
+                                                    <td id="stunden01" class="card-display"></td>
+                                                    <td id="minuten01" class="card-display"></td>
+                                                    <td id="sekunden01" class="card-display"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div id="bachelor-ende">
+        
+                    <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 m-auto">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <b>Zeit bis zur Abgabe (16.09.2019 12:00)</b>
+                                            <img src="hourglass.png" id="logo-ende" width=20px>
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table table-striped">
+                                                <tr>
+                                                    <td>Tage</td>
+                                                    <td>Stunden</td>
+                                                    <td>Minuten</td>
+                                                    <td>Sekunden</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="tage02" class="card-display"></td>
+                                                    <td id="stunden02" class="card-display"></td>
+                                                    <td id="minuten02" class="card-display"></td>
+                                                    <td id="sekunden02" class="card-display"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+</div>
+   
+
 </body>
-
-<script>
-    var endDate = new Date(2019, 9, 16);
-    var currentDate = new Date();
-    var difference = (endDate.getTime() / 1000) - (currentDate.getTime() / 1000);
-
-    var clock = $(".clock-class").FlipClock(difference, {
-        clockFace: 'DailyCounter',
-        countdown: true
-    })
-
-
-    $(window).resize(function () {
-
-        $('.clock-class').css({
-            position: 'absolute',
-            left: ($(window).width() - $('.clock-class').outerWidth()) / 1.16,
-            top: ($(window).height() - $('.clock-class').outerHeight()) / 2.5
-        });
-
-    });
-    $(window).resize();
-
-    new TypeIt('#hero', {
-            speed: 50,
-            startDelay: 900
-        })
-        .type('The most versatile animated typing utility on the internte')
-        .pause(300)
-        .delete(2)
-        .pause(250)
-        .type('et')
-        .pause(750)
-        .options({
-            speed: 100,
-            deleteSpeed: 75
-        })
-        .delete(8)
-        .pause(750)
-        .type('<em>planet.</em>')
-        .go();
-</script>
 
 </html>

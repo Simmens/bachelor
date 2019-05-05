@@ -11,14 +11,46 @@ body{
     background-size: cover;
 }
 
-h1{
-    align-content: center;
+#bachelor-thema{
+    margin-top: 20dp;
+    
+}
+
+img{
+    margin-left: 20px;
+}
+
+
+#bachelor-start{
+    margin-top: 100dp;
+}
+
+
+#bachelor-ende{
+    margin-top: 100dp;
+}
+
+.all-container {
+	margin-top: 3%;
+    margin-bottom: 5%;
+
 }
 
 
 
+.card{
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    margin:5px;
+}
+
+.card-display{
+    font-size: 20px;
+    align: center;
+}
+
 .container{
     overflow-y: hidden;
     overflow-x: hidden; 
+    margin: 50dp;
 }
 
