@@ -1,5 +1,5 @@
 $('#bachelor-ende')
-.countdown('2019/09/16 12:00:00', function(event) {
+.countdown('2019/09/23 12:00:00', function(event) {
     $("#tage02").text(event.strftime('%D'));
     $('#stunden02').text(event.strftime('%H'));
     $('#minuten02').text(event.strftime('%M'));
@@ -9,7 +9,7 @@ $('#bachelor-ende')
     $('#logo-ende').attr('src', 'tick.jpg');
   });
 
-  $('#bachelor-start').countdown('2019/06/24 09:00', function(event) {
+  $('#bachelor-start').countdown('2019/07/01 09:00', function(event) {
     $("#tage01").text(event.strftime('%D'));
     $('#stunden01').text(event.strftime('%H'));
     $('#minuten01').text(event.strftime('%M'));
